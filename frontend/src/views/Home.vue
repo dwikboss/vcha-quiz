@@ -8,10 +8,10 @@
             <img class="logo" src="@/assets/images/logos/vcha-logo.png" alt="" />
             <h1>WHICH<br />VCHA MEMBER<br /> ARE YOU?</h1>
             <p>TAKE THE QUIZ TO REVEAL YOUR VCHA BESTIE AND PERSONALITY GEMSTONES</p>
-            <button class="btn-main">LET'S GO!</button>
+            <button class="btn-main">LET'S ROLL!</button>
           </div>
         </div>
-        <Members/>
+        <Members class="members-component"/>
       </div>
     </div>
   </div>
@@ -50,6 +50,10 @@ export default defineComponent({
       width: 100%;
       height: 100%;
       display: flex;
+
+      .members-component {
+        width: 55%;
+      }
 
       .blur {
         position: absolute;
