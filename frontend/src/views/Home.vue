@@ -4,11 +4,14 @@
       <div class="content-container">
         <div class="content-holder">
           <div class="blur"></div>
-          <img class="logo" src="@/assets/images/logos/vcha-logo.png" alt="" />
-          <h1>WHICH<br />VCHA MEMBER ARE YOU?</h1>
-          <p>TAKE THE QUIZ TO REVEAL YOUR VCHA BESTIE AND PERSONALITY GEMSTONES</p>
+          <div class="contents">
+            <img class="logo" src="@/assets/images/logos/vcha-logo.png" alt="" />
+            <h1>WHICH<br />VCHA MEMBER<br /> ARE YOU?</h1>
+            <p>TAKE THE QUIZ TO REVEAL YOUR VCHA BESTIE AND PERSONALITY GEMSTONES</p>
+            <button class="btn-main">LET'S GO!</button>
+          </div>
         </div>
-        <div class="members-image"></div>
+        <Members/>
       </div>
     </div>
   </div>
@@ -16,9 +19,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Members from '@/components/Members.vue';
 
 export default defineComponent({
   name: 'HomeView',
+  components: {
+    Members
+  },
 });
 </script>
 
@@ -29,7 +36,7 @@ export default defineComponent({
 
   h1 {
     color: white;
-    letter-spacing: -5px;
+    letter-spacing: 1px;
   }
 
   .full-width {
@@ -55,19 +62,31 @@ export default defineComponent({
       .content-holder {
         background-image: url('@/assets/images/galaxy.webp');
         background-size: cover;
-        width: 40%;
+        width: 45%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 50px;
         position: relative;
 
-        img,
-        h1,
-        p {
+        .contents {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 50px;
           z-index: 2;
+
+          .btn-main {
+            color: #9765E2;
+            background-color: white;
+            border: none;
+            font-family: 'Poppins';
+            border-radius: 999px;
+            font-size: 24px;
+            font-weight: 700;
+            padding: 10px 25px 10px 25px;
+          }
         }
 
         h1 {
@@ -81,16 +100,8 @@ export default defineComponent({
           font-size: 26px;
           text-align: center;
           width: 50%;
-          font-weight: 500;
+          font-weight: 400;
         }
-      }
-      .members-image {
-        height: 100%;
-        width: 60%;
-        background-color: yellow;
-        background-image: url('@/assets/images/vcha-members.webp');
-        background-position: center center;
-        background-size: cover;
       }
     }
 
