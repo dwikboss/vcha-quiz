@@ -2,24 +2,39 @@
     <div class="members">
         <div class="member-navigation">
             <div class="member-list">
-                <p>Kaylee</p>
-                <p>Camila</p>
-                <p>KG</p>
-                <p>Kendall</p>
-                <p>Lexi</p>
-                <p>Savanna</p>
+                <p v-for="(member, index) in members" :key="index" @click="selectMember(member)">{{ member }}</p>
             </div>
+        </div>
+        <div class="member-card-container">
+            <CharacterCard v-if="selectedMember" :memberData="selectedMember" />
         </div>
     </div>
 </template>
   
 <script lang="ts">
 import { defineComponent } from 'vue';
+import members from '@/assets/data/members.json';
+import CharacterCard from '@/components/CharacterCard.vue';
 
 export default defineComponent({
     name: 'Members',
-    props: {
+    components: {
+        CharacterCard
     },
+    data() {
+        return {
+            members: Object.keys(members),
+            selectedMember: null
+        };
+    },
+    computed: {
+
+    },
+    methods: {
+        selectMember(memberName: string) {
+            this.selectedMember = memberName;
+        }
+    }
 });
 </script>
   
