@@ -24,7 +24,7 @@ export default defineComponent({
     data() {
         return {
             members: Object.keys(members),
-            selectedMember: null
+            selectedMember: null as String | null
         };
     },
     computed: {
@@ -33,6 +33,7 @@ export default defineComponent({
     methods: {
         selectMember(memberName: string) {
             this.selectedMember = memberName;
+            console.log(this.selectedMember);
         }
     }
 });
@@ -59,6 +60,11 @@ export default defineComponent({
                     font-family: 'Poppins';
                     font-weight: 500;
                     font-size: 1.5rem;
+
+                    &:hover {
+                        text-shadow: 0px 0px 5px #A742CE;
+                        cursor: pointer;
+                    }
                 }
             }
         }
