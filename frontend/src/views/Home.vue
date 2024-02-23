@@ -79,7 +79,7 @@ export default defineComponent({
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 30px;
+          gap: 35px;
           z-index: 2;
 
           .btn-main {
