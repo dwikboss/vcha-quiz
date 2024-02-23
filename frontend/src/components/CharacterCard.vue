@@ -1,6 +1,8 @@
 <template>
     <div class="card-container">
-        <div class="member-image" ></div>
+        <div class="member-image">
+            djfhjsadfhkj
+        </div>
     </div>
 </template>
   
@@ -11,6 +13,7 @@ import { defineComponent } from 'vue';
 export default defineComponent({
     name: 'CharacterCard',
     props: {
+        memberData: {}
     },
     data() {
 
@@ -24,4 +27,7 @@ export default defineComponent({
 </script>
   
 <style lang="scss" scoped>
+.card-container {
+    background-color: white;
+}
 </style> 

@@ -37,6 +37,7 @@ export default defineComponent({
   h1 {
     color: white;
     letter-spacing: 1px;
+    font-size: 5em;
   }
 
   .full-width {
@@ -78,7 +79,7 @@ export default defineComponent({
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 50px;
+          gap: 30px;
           z-index: 2;
 
           .btn-main {
