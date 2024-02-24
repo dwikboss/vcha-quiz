@@ -50,12 +50,14 @@ export default defineComponent({
   background-image: url('@/assets/images/vcha-members.webp');
   background-position: center center;
   background-size: cover;
+  background-size: 110%;
 
   .member-card-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
+
   }
 
   .member-navigation {

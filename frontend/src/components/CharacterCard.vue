@@ -50,7 +50,7 @@ export default defineComponent({
   width: 22vw;
   height: 65vh;
   background-image: url('@/assets/images/spark.gif');
-  box-shadow: inset 0 0 0 2000px rgb(74 36 101 / 60%);
+  box-shadow: inset 0 0 0 2000px rgb(48 0 0 / 57%);
 
   .member-image-container {
     height: 100%;
@@ -62,6 +62,7 @@ export default defineComponent({
       height: 100%;
       display: flex;
       justify-content: space-between;
+      overflow: hidden;
       flex-direction: column;
 
       .top-card {
@@ -72,6 +73,8 @@ export default defineComponent({
         height: 20%;
         width: 100%;
         padding: 0 30px 0 30px;
+        background: rgb(77,0,0);
+background: linear-gradient(180deg, rgba(77,0,0,0.8407738095238095) 0%, rgba(255,242,235,0) 100%);
 
         .member-intro {
           color: white;
@@ -82,6 +85,7 @@ export default defineComponent({
 
           p:nth-child(2) {
             font-size: 1.2rem;
+            margin-top: -10px;
           }
         }
 
@@ -96,7 +100,7 @@ export default defineComponent({
           align-items: center;
 
           .member-number {
-            color: rgb(80, 60, 128);
+            color: rgb(114 23 23);
             font-family: 'Abril Fatface';
             font-size: 1.8rem;
           }
@@ -105,8 +109,8 @@ export default defineComponent({
 
       .bottom-card {
         height: 50%;
-        background: rgb(69,65,92);
-        background: linear-gradient(180deg, rgba(69,65,92,0) 0%, rgba(73,47,116,1) 100%);
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(69, 65, 92, 0) 0%, rgb(54 2 2) 100%);
         padding: 35px;
         display: flex;
         flex-direction: column;

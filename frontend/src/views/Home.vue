@@ -4,14 +4,19 @@
       <div class="content-container">
         <div class="content-holder">
           <div class="blur"></div>
+          <img class="star s1" src="@/assets/images/star.png" alt="star" />
+          <img class="star s2" src="@/assets/images/star.png" alt="star" />
           <div class="contents">
             <img class="logo" src="@/assets/images/logos/vcha-logo.png" alt="" />
-            <h1>WHICH<br />VCHA MEMBER<br /> ARE YOU?</h1>
+            <h1>
+              WHICH<br />VCHA MEMBER<br />
+              ARE YOU?
+            </h1>
             <p>TAKE THE QUIZ TO REVEAL YOUR VCHA BESTIE AND PERSONALITY GEMSTONES</p>
             <button class="btn-main">LET'S ROLL!</button>
           </div>
         </div>
-        <Members class="members-component"/>
+        <Members class="members-component" />
       </div>
     </div>
   </div>
@@ -24,12 +29,26 @@ import Members from '@/components/Members.vue';
 export default defineComponent({
   name: 'HomeView',
   components: {
-    Members
+    Members,
   },
 });
 </script>
 
 <style lang="scss" scoped>
+@keyframes pulse {
+  0% {
+    scale: 1;
+    opacity: 0.6;
+  }
+  50% {
+    scale: 1.5;
+    opacity: 1;
+  }
+  100% {
+    scale: 1;
+    opacity: 0.6;
+  }
+}
 .page.home {
   background-color: var(--black);
   height: 100vh;
@@ -61,11 +80,11 @@ export default defineComponent({
         top: 0;
         height: 100%;
         width: 100%;
-        backdrop-filter: blur(12px);
+        backdrop-filter: blur(20px);
         z-index: 0;
       }
       .content-holder {
-        background-image: url('@/assets/images/galaxy.webp');
+        background-image: url('@/assets/images/cloth.jpg');
         background-size: cover;
         width: 45%;
         height: 100%;
@@ -74,6 +93,23 @@ export default defineComponent({
         justify-content: center;
         flex-direction: column;
         position: relative;
+        overflow: hidden;
+
+        .star {
+          position: absolute;
+          &.s1 {
+            width: 300px;
+            left: 5%;
+            bottom: -5%;
+            animation: pulse 4s ease infinite;
+          }
+          &.s2 {
+            width: 210px;
+            right: 5%;
+            top: 10%;
+            animation: pulse 3s ease infinite;
+          }
+        }
 
         .contents {
           display: flex;
@@ -83,7 +119,7 @@ export default defineComponent({
           z-index: 2;
 
           .btn-main {
-            color: #9765E2;
+            color: #7a2f2f;
             background-color: white;
             border: none;
             font-family: 'Poppins';

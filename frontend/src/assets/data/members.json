@@ -7,7 +7,7 @@
         "favorite_season": "Summer",
         "skills": "Singing, Basketball",
         "zodiac": "Gemini",
-        "member_img": "kg.jpg"
+        "member_img": "kg.jpeg"
     },
     "Kendall": {
         "name": "Kendall",
@@ -17,7 +17,7 @@
         "favorite_season": "Winter",
         "skills": "School, art, gaming, closing one eye without moving the other, shaking pupils",
         "zodiac": "Gemini",
-        "member_img": "kendall.jpg"
+        "member_img": "kendall.jpeg"
     },
     "Lexi": {
         "name": "Lexi",
@@ -27,7 +27,7 @@
         "favorite_season": "Fall & Winter",
         "skills": "Making a really good Hmong-style papaya salad",
         "zodiac": "Sagittarius",
-        "member_img": "lexi.jpg"
+        "member_img": "lexi.jpeg"
     },
     "Camila": {
         "name": "Camila",
@@ -37,7 +37,7 @@
         "favorite_season": "Fall",
         "skills": "Painting, drawing, acting, eating sour sweets, baking",
         "zodiac": "Leo",
-        "member_img": "camila.jpg"
+        "member_img": "camila.jpeg"
     },
     "Kaylee": {
         "name": "Kaylee",
@@ -57,6 +57,6 @@
         "favorite_season": "Summer",
         "skills": "Holding handstand for a long time, learning dances super-fast",
         "zodiac": "Leo",
-        "member_img": "savanna.jpg"
+        "member_img": "savanna.jpeg"
     }
 }  
