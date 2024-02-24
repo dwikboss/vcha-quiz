@@ -1,28 +1,28 @@
 <template>
   <div class="card-container">
     <div class="member-image-container">
-      <div class="member-image" :style="`background-image: url(/src/assets/images/members/${memberData?.member_img})`">
+      <div class="member-image" :style="`background-image: url(/src/assets/images/members/${memberData['member_img']})`">
         <div class="top-card">
           <div class="member-intro">
-            <p>{{ memberData.name }}</p>
-            <p>{{ memberData.birthday }}</p>
+            <p>{{ memberData['name'] }}</p>
+            <p>{{ memberData['birthday'] }}</p>
           </div>
           <div class="number-circle">
-            <p class="member-number">{{ memberData.favorite_number }}</p>
+            <p class="member-number">{{ memberData['favorite_number'] }}</p>
           </div>
         </div>
         <div class="bottom-card">
           <div class="member-basic">
             <p>Favorite Season</p>
-            <p>{{ memberData.favorite_season }}</p>
+            <p>{{ memberData['favorite_season'] }}</p>
           </div>
           <div class="member-basic">
             <p>Special skills</p>
-            <p>{{ memberData.skills }}</p>
+            <p>{{ memberData['skills'] }}</p>
           </div>
           <div class="member-basic">
             <p>Birth city</p>
-            <p>{{ memberData.birth_city }}</p>
+            <p>{{ memberData['birth_city'] }}</p>
           </div>
         </div>
       </div>
@@ -38,7 +38,11 @@ export default defineComponent({
   name: 'CharacterCard',
   data() {},
   props: {
-    memberData: {} as _IMember,
+    memberData: {
+      type: Object as () => _IMember,
+      required: true,
+      default: () => ({} as _IMember),
+    },
   },
   computed: {},
   methods: {},
