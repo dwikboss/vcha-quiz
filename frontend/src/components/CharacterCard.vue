@@ -97,8 +97,8 @@ background: linear-gradient(180deg, rgba(77,0,0,0.8407738095238095) 0%, rgba(255
           background-color: white;
           padding: 5px;
           border-radius: 999px;
-          width: 60px;
-          height: 60px;
+          width: 50px;
+          height: 50px;
           display: flex;
           justify-content: center;
           align-items: center;
