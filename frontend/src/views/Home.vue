@@ -50,7 +50,6 @@ export default defineComponent({
   }
 }
 .page.home {
-  background-color: var(--black);
   height: 100vh;
 
   h1 {
@@ -84,7 +83,6 @@ export default defineComponent({
         z-index: 0;
       }
       .content-holder {
-        background-image: url('@/assets/images/cloth.jpg');
         background-size: cover;
         width: 45%;
         height: 100%;

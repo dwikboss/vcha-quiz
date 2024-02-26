@@ -13,6 +13,11 @@ export default defineComponent({});
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('@/assets/images/cloth.jpg');
+}
+
+template {
+  background-color: red;
 }
 
 .page {
