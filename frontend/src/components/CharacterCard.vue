@@ -1,7 +1,7 @@
 <template>
   <div class="card-container">
     <div class="member-image-container">
-      <div class="member-image" :style="`background-image: url(/src/assets/images/members/${memberData['member_img']})`">
+      <div class="member-image" :style="`background-image: url(./src/assets/images/members/${memberData['member_img']})`">
         <div class="top-card">
           <div class="member-intro">
             <p>{{ memberData['name'] }}</p>
