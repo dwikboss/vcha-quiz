@@ -63,14 +63,14 @@ export default defineComponent({
   data() {
     return {
       members: Object.keys(members),
-      selectedMember: '',
+      selectedMember: {} as _IMember,
     };
   },
   computed: {},
   methods: {
     selectMember(memberName: string) {
       if (members.hasOwnProperty(memberName)) {
-        const selectedMember = members[memberName];
+        const selectedMember = members[memberName] as unknown as _IMember;
         console.log(selectedMember);
         this.selectedMember = selectedMember;
       } else {
