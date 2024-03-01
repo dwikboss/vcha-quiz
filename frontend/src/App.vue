@@ -1,4 +1,5 @@
 <template>
+  <div class="blur"></div>
   <RouterView />
 </template>
 
@@ -14,6 +15,16 @@ export default defineComponent({});
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('@/assets/images/cloth.jpg');
+  background-size: cover;
+
+  .blur {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 0;
+  }
 }
 
 template {

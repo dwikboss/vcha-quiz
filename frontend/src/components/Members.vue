@@ -51,7 +51,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import members from '@/assets/data/members.json';
+import members from '@/assets/data/members';
 import CharacterCard from '@/components/CharacterCard.vue';
 import type _IMember from '../interfaces/_IMember';
 
@@ -63,7 +63,7 @@ export default defineComponent({
   data() {
     return {
       members: Object.keys(members),
-      selectedMember: {} as _IMember,
+      selectedMember: '',
     };
   },
   computed: {},

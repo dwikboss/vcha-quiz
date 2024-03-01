@@ -3,13 +3,12 @@
     <div class="full-width">
       <div class="content-container">
         <div class="content-holder">
-          <div class="blur"></div>
           <img class="star s1" src="@/assets/images/star.png" alt="star" />
           <img class="star s2" src="@/assets/images/star.png" alt="star" />
           <div class="contents">
             <img class="logo" src="@/assets/images/logos/vcha-logo.png" alt="" />
             <h1>
-              WHICH<br />VCHA MEMBER<br />
+              WHICH<br/>VCHA MEMBER<br/>
               ARE YOU?
             </h1>
             <p>TAKE THE QUIZ TO REVEAL YOUR VCHA BESTIE AND PERSONALITY GEMSTONES</p>
@@ -74,14 +73,6 @@ export default defineComponent({
         width: 55%;
       }
 
-      .blur {
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        backdrop-filter: blur(20px);
-        z-index: 0;
-      }
       .content-holder {
         background-size: cover;
         width: 45%;
